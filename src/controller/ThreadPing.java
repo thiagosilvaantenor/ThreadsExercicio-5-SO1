@@ -46,11 +46,11 @@ public class ThreadPing extends Thread{
 			
 			String linha = buffer.readLine();
 			while(linha != null) {
-				if(linha.contains("time")) {
+				if(linha.contains("time=")) {
 					tempo = linha.split(":");
 					aux = tempo[1];
 					tempo = aux.split("time=");
-					aux = tempo[0];
+					aux = tempo[1];
 					System.out.println("Servidor: "+nomeServidor);
 					System.out.println("Tempo desta iteracao: " + aux);
 				}

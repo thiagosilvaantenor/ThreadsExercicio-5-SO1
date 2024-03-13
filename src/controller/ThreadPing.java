@@ -67,6 +67,8 @@ public class ThreadPing extends Thread{
 			}
 			
 			
+		} else{
+			System.out.println("Erro, este projeto só funciona em sistemas operacionais Linux");
 		}
 	}
 	
